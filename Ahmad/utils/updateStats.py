@@ -24,7 +24,7 @@ OUTPUT:
 Outputs a dictionary with the updated stats
 """
 def updateStats(match, prev_stats):
-    from utils.common import mean, getWinnerLoserIDS
+    from Ahmad.utils.common import mean, getWinnerLoserIDS
     import numpy as np
 
     # Get Winner and Loser ID'S
@@ -132,7 +132,7 @@ OUTPUT:
 Outputs a dictionary with all the stats calcualted
 """
 def getStats(player1, player2, match, prev_stats):
-    from utils.common import mean, getWinnerLoserIDS
+    from Ahmad.utils.common import mean, getWinnerLoserIDS
     import numpy as np
 
     output = {}
