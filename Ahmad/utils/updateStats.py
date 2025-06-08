@@ -124,12 +124,10 @@ def updateStats(match, prev_stats):
 
 """
 INPUTS:
-Player1 and Player2 should be a dictionaries with the following keys for each player: ID, ATP_POINTS, ATP_RANK, AGE, HEIGHT, 
-Match should be a dict with common information about the game (like the number of BEST_OF, DRAW_SIZE, SURFACE). (cool thing is that in the future we can add more stuff here).
-Prev_stats should be all the stats data we have until the most recent game. If we were predicting new data, we would just pass all the calculated stats in the dataset from 1991 to now.
-
+P1 and P2 should be dictionaries with the following keys for each player: ID, ATP_POINTS, ATP_RANK, AGE, HEIGHT, 
+Match should be a dict with common information about the game.
 OUTPUT:
-Outputs a dictionary with all the stats calcualted
+Outputs a dictionary with all the stats calculated
 """
 def getStats(player1, player2, match, prev_stats):
     from Ahmad.utils.common import mean, getWinnerLoserIDS
